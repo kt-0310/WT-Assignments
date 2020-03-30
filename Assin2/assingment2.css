@@ -1,0 +1,98 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    background-color : red;
+    color: black;
+    font-size: 40px;
+}
+
+body {
+    background-image: url("back.jpg") ;
+    background-color: #cccccc;
+    height: 500px;
+    background-position: 0mm;
+    background-repeat: no-repeat;
+    background-size: 100% , 100%;
+  }
+
+   .main { */
+    margin-left: 220px; 
+    font-size: 25px; 
+    padding: 0px 12px;
+  }
+
+  .navigation a:hover, .mainmenu:hover {
+    color: greenyellow;
+    background-color: teal;
+  }
+
+  .navigation a, .mainmenu {
+    padding: 6px 8px 6px 16px;
+    text-decoration: brown;
+    font-size: 25px;
+    color: #136e6e;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .navigation {
+    height: 100%;
+    width: 220px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.795);
+    overflow-x: hidden;
+    padding-top: 100px;
+  }
+
+
+.navigation {
+  width: 300px;
+}
+
+.mainmenu, .submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mainmenu a {
+  display: block;
+  background-color:  white    ;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+}
+.mainmenu a:hover {
+    background-color: blue ;
+    font-size: 36px;
+}
+
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height: 500px;
+}
+
+.submenu a {
+  background-color: #999;
+}
+
+/* hover behaviour for links inside .submenu */
+.submenu a:hover {
+  background-color: #666;
+}
+
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}
